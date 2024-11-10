@@ -6,6 +6,8 @@ app.use("/name", (request, response) => {
   response.json({ message: "Hamad Almatouq" });
 });
 
-app.listen(8000, () => {
-  console.log("This application is running on localhost:8000");
+const PORT = 8000;
+
+app.listen(PORT, () => {
+  console.log(`This application is running on localhost:${PORT}`);
 });
